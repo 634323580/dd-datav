@@ -1,5 +1,5 @@
 {
-  "name": "dd-datav-libs",
+  "name": "dd-datav",
   "version": "1.0.0",
   "description": "diandian datav components library",
   "main": "dist/dd.datav.js",
