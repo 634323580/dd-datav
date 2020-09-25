@@ -20,13 +20,13 @@ module.exports = {
     format: 'umd',
     name: 'ddDataV',
     globals: {
-      vue: 'Vue'
+      vue: 'vue'
     }
   },{
     file: outputEsPath,
     format: 'es',
     globals: {
-      vue: 'Vue'
+      vue: 'vue'
     }
   }],
   plugins: [

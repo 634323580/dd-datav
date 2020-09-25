@@ -2,13 +2,21 @@
   "name": "dd-datav-libs",
   "version": "1.0.0",
   "description": "diandian datav components library",
-  "main": "index.js",
+  "main": "dist/dd.datav.js",
   "scripts": {
     "dev": "rollup -wc rollup.config.dev.js",
     "build": "rollup -c rollup.config.dev.js",
-    "build:prod": "rollup -c rollup.config.prod.js"
+    "build:prod": "rollup -c rollup.config.prod.js",
+    "lint": "eslint ./src"
   },
-  "keywords": [],
+  "files": [
+    "dist",
+    "src"
+  ],
+  "keywords": [
+    "vue",
+    "datav"
+  ],
   "author": "diandian<634323580@qq.com>",
   "license": "ISC",
   "devDependencies": {
@@ -16,6 +24,8 @@
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
     "@vue/compiler-sfc": "^3.0.0",
+    "eslint": "^6.8.0",
+    "eslint-plugin-vue": "^6.2.2",
     "rollup": "^2.28.1",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
