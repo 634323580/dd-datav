@@ -5,7 +5,7 @@
   "main": "dist/dd.datav.js",
   "scripts": {
     "dev": "rollup -wc rollup.config.dev.js",
-    "build": "rollup -c rollup.config.dev.js",
+    "build": "rollup -c rollup.config.prod.js",
     "build:prod": "rollup -c rollup.config.prod.js",
     "lint": "eslint ./src"
   },

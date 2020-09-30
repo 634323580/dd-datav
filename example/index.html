@@ -10,9 +10,11 @@
 <body>
   <div id="app">
     {{message}}
-    <test-component>
+    <test-component></test-component>
+    <test2-component></test2-component>
   </div>
   <script>
+    console.log(ddDataV)
     Vue.createApp({
       setup() {
         const message = 'hello vue3!!'
