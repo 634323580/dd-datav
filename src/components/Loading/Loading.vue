@@ -57,7 +57,7 @@
 <script>
 import { computed } from 'vue'
 export default {
-  name: "Loading",
+  name: "ddLoading",
   props: {
     width: {
       type: [Number, String],
