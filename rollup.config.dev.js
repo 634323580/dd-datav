@@ -1,11 +1,13 @@
 const path = require('path')
+// 打包外部模块代码
 const resolve = require('rollup-plugin-node-resolve')
-// 支持commonjs模块
+// 支持commonjs模块打包
 const commonjs = require('rollup-plugin-commonjs')
 const babel = require('rollup-plugin-babel')
 // 支持json文件
 const json = require('rollup-plugin-json')
 const vuePlugin = require('rollup-plugin-vue')
+// 识别打包css
 const postcss = require('rollup-plugin-postcss')
 
 
@@ -47,5 +49,6 @@ module.exports = {
       plugins: []
     })
   ],
+  // 不打包vue，声明vue为外部模块
   external: ['vue']
 }

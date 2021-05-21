@@ -1,4 +1,5 @@
 const path = require('path')
+// 打包外部模块代码
 const resolve = require('rollup-plugin-node-resolve')
 // 支持commonjs模块
 const commonjs = require('rollup-plugin-commonjs')
@@ -8,6 +9,7 @@ const json = require('rollup-plugin-json')
 // 代码压缩
 const { terser } = require('rollup-plugin-terser')
 const vuePlugin = require('rollup-plugin-vue')
+
 const postcss = require('rollup-plugin-postcss')
 
 const inputPath = path.resolve(__dirname, './src/index.js')
@@ -49,5 +51,6 @@ module.exports = {
     }),
     terser()
   ],
+  // 不打包vue，声明vue为外部模块
   external: ['vue']
 }
